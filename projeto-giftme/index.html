@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>GiftMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--Cabeçalho-->
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">GiftMe</a>
+            </div>
+
+            <nav>
+                <ul type="none" id="menuList">
+                    <li><a href="#">Centres</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="images/icon-menu.png" alt="Menu" onclick="togglemenu()">
+        </div>
+    </header>
+    <main>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>'Tis the season to be jolly! </h2>
+                <p>Brownse from our selection of festive decor and gift</p>
+                <button type="button">Buy Now <img src="images/arrow.png" alt="seta"></button>
+            </div>
+
+            <div class="col-2">
+                <img src="images/imagem.png" >
+            </div>
+        </div>
+
+    <!--Rodapé-->
+    <footer>
+        <div class="social-links">
+            <ul type="none">
+                <li><a href="https://github.com/soaresdouglass" target="_blank"> <img src="images/icon-github.png" alt="Github"></a></li>
+                
+                <li><a href="https://www.linkedin.com/in/soares-douglass/" target="_blank"><img src="images/icon-linkedin.png" alt=""></a></li>
+
+                <a href="mailto:soares_douglas2021@hotmail.com"><img src="images/icon-email.png" alt="Email"></a>
+            </ul>
+            <p>Site criado por Douglas Soares</p>
+        </div>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+        if (menuList.style.maxHeight == "0px") {
+            
+            menuList.style.maxHeight = "130px"
+        }
+
+        else
+        {
+            menuList.style.maxHeight = "0px"
+        }
+    
+    }
+    </script>
+</body>
+</html>
