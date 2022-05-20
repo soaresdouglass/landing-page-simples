@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/math-logo.png" type="image/x-icon">
+    <title>Math Simple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/math-logo.png" alt="Matemática">
+            <div class="marca">
+                <h1>Math Simple</h1>
+            </div>
+            
+        </div>
+
+        <nav>
+            <ul type="none" id="menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li class="login"><a href="#">Se inscreva</a></li>
+            </ul>
+        </nav>
+        <img class="menu-icon" src="img/menu.png" alt="Menu-icon" onclick="togglemenu()">
+    </header>
+
+    <main>
+        <div class="col1">
+            <h2>Aprenda Matemática do jeito simples!</h2>
+            <p>Clica no botão e saiba mais</p>
+            <button>Saiba mais <img src="img/arrow.png" ></button>
+        </div>
+
+        <div class="col2">
+            <img src="Teaching-rafiki.svg" alt="Estudando Math">
+        </div>
+    </main>
+
+    <footer class="social-links">
+        <ul type="none">
+            <li><a href="https://github.com/soaresdouglass" target="_blank"> <img src="img/icon-github.png" alt="Github"></a></li>
+            
+            <li><a href="https://www.linkedin.com/in/soares-douglass/" target="_blank"><img src="img/icon-linkedin.png" alt=""></a></li>
+
+            <li><a href="mailto:soares_douglas2021@hotmail.com"><img src="img/icon-email.png" alt="Email"></a></li>
+        </ul>
+        <p>Site criado por Douglas Soares</p>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+        if (menuList.style.maxHeight == "0px") {
+            
+            menuList.style.maxHeight = "130px"
+        }
+
+        else
+        {
+            menuList.style.maxHeight = "0px"
+        }
+    
+    }
+    </script>
+</body>
+</html>
